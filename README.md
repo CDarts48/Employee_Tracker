@@ -19,6 +19,8 @@ https://github.com/CDarts48/Employee_Tracker
 Screenshot
 ![Screenshot 2024-01-30 at 2 09 25 PM (2)](https://github.com/CDarts48/Employee_Tracker/assets/137344214/31259668-83b7-4219-9980-c81514e1b5f6)
 
+<img width="1680" alt="Screenshot 2024-01-30 at 2 09 25 PM" src="https://github.com/CDarts48/Employee_Tracker/assets/137344214/5b4b80f6-b51e-4c4f-b396-6116118b4815">
+
 
 Table of Contents
 Features
