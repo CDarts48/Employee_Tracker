@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Employees (
     first_name VARCHAR(50),
     last_name VARCHAR(50),
     role_id INT,
-    ManagerID INT,
+    managerID INT,
     FOREIGN KEY (role_id) 
     REFERENCES Roles(role_id)
 );
