@@ -314,14 +314,24 @@ async function promptManager() {
           },
         ])
         .then((answers) => {
-          // Delete the role from the database
+          // Delete the employees with the role from the database
           connection.query(
-            "DELETE FROM Roles WHERE role_id = ?",
+            "DELETE FROM Employees WHERE role_id = ?",
             [answers.role_id],
             function (error) {
               if (error) throw error;
-              console.log("Role deleted successfully!");
-              promptManager();
+              console.log("Employees with the role deleted successfully!");
+
+              // Then delete the role from the database
+              connection.query(
+                "DELETE FROM Roles WHERE role_id = ?",
+                [answers.role_id],
+                function (error) {
+                  if (error) throw error;
+                  console.log("Role deleted successfully!");
+                  promptManager();
+                }
+              );
             }
           );
         });
